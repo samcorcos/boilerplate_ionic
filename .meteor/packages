@@ -9,7 +9,6 @@ coffeescript
 fourseven:scss
 iron:router
 meteorhacks:kadira
-sacha:spin
 underscore
 stevezhu:lodash
 meteoric:ionic-sass
@@ -19,3 +18,4 @@ mike:mocha
 useraccounts:ionic
 meteoric:autoform-ionic
 accounts-password
+sacha:spin
