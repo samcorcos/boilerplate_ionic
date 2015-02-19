@@ -1,0 +1,21 @@
+@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/ionic';
+@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/ionicons';
+
+.empty-view {
+  color: #ccc;
+  text-align: center;
+  padding-top: 25vh;
+
+  i {
+    display: block;
+    margin: 0 auto 12px auto;
+    font-size: 60px;
+  }
+}
+
+//// This is how you initialize an empty view ////
+
+// <div class="empty-view">
+//   {{> ionIcon icon="ios-bell"}}
+//   No notifications yet!
+// </div>

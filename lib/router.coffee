@@ -4,6 +4,9 @@ Router.configure
   loadingTemplate: 'loading'
 
 Router.map ->
-  
+
   @route 'home',
     path: '/'
+
+  @route 'settings',
+    path: '/settings'

@@ -1,3 +1,33 @@
 <template name="layout">
-  {{> yield}}
+  {{#ionBody}}
+    {{> ionNavBar}}
+
+    {{#ionNavView}}
+      {{> yield}}
+    {{/ionNavView}}
+
+    {{#if isAndroid}}
+      {{#ionTabs style="android"}}
+        {{> ionTab title="Home" path="home" icon="ios-book" modal="collegeSelectModal"}}
+        {{> ionTab title="Tab" path="#" icon="ios-bell"}}
+        {{> ionTab title="Tab" path="#" icon="ios-bolt-outline"}}
+        {{> ionTab title="Settings" path="settings" icon="ios-gear"}}
+      {{/ionTabs}}
+    {{else}}
+      {{#ionTabs style="ios"}}
+        {{> ionTab title="Home" path="home" iconOff="ios-book-outline" iconOn="ios-book" class="tab-item-positive"}}
+        {{> ionTab title="Tab" path="#" iconOff="ios-bell-outline" iconOn="ios-bell" class="tab-item-positive"}}
+        {{> ionTab title="Tab" path="#!" iconOff="ios-bolt-outline" iconOn="ios-bolt" class="tab-item-positive"}}
+        {{> ionTab title="Settings" path="settings" iconOff="ios-gear-outline" iconOn="ios-gear" class="tab-item-positive"}}
+      {{/ionTabs}}
+    {{/if}}
+
+
+  {{/ionBody}}
 </template>
+
+<head>
+  <title>Title of content</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+</head>
