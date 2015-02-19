@@ -1,12 +1,21 @@
 <template name="settings">
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Settings</h1>
+  {{/contentFor}}
+
   {{#ionView}}
     {{#ionContent}}
 
-      <div class="empty-view">
-        {{> ionIcon icon="ios-gear"}}
-        No settings!
+    {{#if currentUser}}
+      <div class="padding">
+        <button class="button button-positive button-block" data-action="logout">Log Out</button>
       </div>
-      
+    {{else}}
+      {{> atForm}}
+    {{/if}}
+
+
     {{/ionContent}}
   {{/ionView}}
 </template>
