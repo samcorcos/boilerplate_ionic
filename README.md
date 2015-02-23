@@ -1,4 +1,4 @@
-App Name
-========
+Kitchen
+=======
 
-This is the app 
+Mobile app for curated, healthy food delivery with a focus on breakfast.
